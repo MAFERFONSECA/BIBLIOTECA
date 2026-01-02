@@ -1,0 +1,38 @@
+﻿<Window x:Class="BIBLIOTECA_UAdeO.FORMULARIOS.USUARIOS"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BIBLIOTECA_UAdeO.FORMULARIOS"
+        mc:Ignorable="d"
+        Title="USUARIOS"  
+        Height="720"
+        Width="1280"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/FORMULARIOS/IMAGENES/BIBLIOTECARIO (2).png"/>
+        </Grid.Background>
+
+        <Button x:Name="BTNUSUARIOS" Margin="156,203,719,254" Click="BTNSOLICITANTES_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/SOLICITANTES.png" Width="67" Height="71"/>
+                <TextBlock Width="92"><Run/><LineBreak/><Run/><LineBreak/><Run Text="   "/><Run Text="USUARIOS"/><LineBreak/><Run/></TextBlock>
+            </StackPanel>
+        </Button>
+        <Button x:Name="BTNTIPOUSUARIO" Margin="733,203,154,254" Click="BTNTIPOUSUARIO_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/TIPOUSUARIOS.png" Width="67" Height="71"/>
+                <TextBlock Width="92"><Run/><LineBreak/><Run/><LineBreak/><Run Text="  "/><Run Text="TIPO "/><Run Text="USUARIO"/><LineBreak/><Run/></TextBlock>
+            </StackPanel>
+        </Button>
+        <Button x:Name="BTNSALIR" Margin="995,581,107,40" Click="BTNSALIR_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/SALIR.png" Width="30" Height="30" Margin="0,0,5,0"/>
+                <TextBlock Text="SALIR"/>
+            </StackPanel>
+        </Button>
+
+    </Grid>
+</Window>

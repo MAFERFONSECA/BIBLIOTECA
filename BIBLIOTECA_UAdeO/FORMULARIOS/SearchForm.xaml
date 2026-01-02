@@ -1,0 +1,54 @@
+﻿<Window x:Class="BIBLIOTECA_UAdeO.FORMULARIOS.SearchForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BIBLIOTECA_UAdeO.FORMULARIOS"
+        mc:Ignorable="d"
+        Title="SearchForm"         
+        Height="720"
+        Width="1280"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize">
+    <Grid x:Name="gridformulario" Loaded="gridformulario_Loaded" Background="#FF98143B">
+        <DataGrid x:Name="dg" AutoGenerateColumns="True" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="109,144,109,154" FontSize="16"/>
+        <TextBox x:Name="txtFindWhat" HorizontalAlignment="Left" Margin="278,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="344" Height="37" TextChanged="txtFindWhat_TextChanged" FontSize="22"/>
+        <Label Content="Dato a buscar:" HorizontalAlignment="Left" Margin="109,24,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.545,-0.272" FontWeight="Bold" Foreground="White" FontSize="22"/>
+        <ComboBox x:Name="cmbLookIn" HorizontalAlignment="Left" Margin="278,92,0,0" VerticalAlignment="Top" Width="344" FontSize="22"/>
+        <ComboBox x:Name="cmbMatch" HorizontalAlignment="Left" Margin="755,92,0,0" VerticalAlignment="Top" Width="328" InputScope="Default" FontSize="22"/>
+        <Label Content="Buscar en:" HorizontalAlignment="Left" Margin="109,83,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="White" FontSize="22"/>
+        <Label Content="Filtro:" HorizontalAlignment="Left" Margin="679,88,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="White" FontSize="22"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="705,18,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.554,-0.105" Height="45" Width="45" Click="Button_Click_1" BorderBrush="White">
+            <Button.Background>
+                <ImageBrush ImageSource="/FORMULARIOS/IMAGENES/BUSCAR.png" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="btncancelar" Margin="897,580,162,37" Click="btncancelar_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/boton-eliminar.png" Width="30" Height="30" Margin="0,0,5,0"/>
+                <TextBlock Text="Cancelar"/>
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="btnaceptar" Margin="167,576,893,41" Click="Button_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/ACEPTAR.png" Width="30" Height="30" Margin="0,0,5,0"/>
+                <TextBlock Text="Aceptar"/>
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="btnlimpiar" Margin="528,578,530,39" Click="btnlimpiar_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/LIMPIAR.png" Width="30" Height="30" Margin="0,0,5,0"/>
+                <TextBlock Text="Limpiar"/>
+            </StackPanel>
+        </Button>
+
+
+
+
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,69 @@
+﻿<Window x:Class="BIBLIOTECA_UAdeO.FORMULARIOS.PRESTAMOS"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BIBLIOTECA_UAdeO.FORMULARIOS"
+        mc:Ignorable="d"
+        Title="PRESTAMOS"         
+        Height="720"
+        Width="1280"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize">
+    <Grid>
+
+        <Grid.Background>
+            <ImageBrush x:Name="BIBLIOTECARIO_GRID" ImageSource="/FORMULARIOS/IMAGENES/BIBLIOTECARIO (2).png"/>
+        </Grid.Background>
+        <DataGrid x:Name="DTGRIDPRESTAMOACTUAL" Margin="91,224,134,195" FontSize="16"/>
+        <Button x:Name="BTNSALIR" Margin="1003,563,86,64" Click="BTNSALIR_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/SALIR.png" Width="30" Height="30" Margin="0,0,5,0"/>
+                <TextBlock Text="SALIR"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="BTNGUARDARPRESTAMO" Margin="743,563,346,63" Click="BTNGUARDARPRESTAMO_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/GUARDAR.png" Width="30" Height="30" Margin="0,0,5,0"/>
+                <TextBlock Text="GUARDAR"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="BTNBUSCARLIBRO" Margin="271,564,818,63" Click="BTNBUSCARLIBRO_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/BUSCAR.png" Width="30" Height="30" Margin="0,0,5,0"/>
+                <TextBlock Text="BUSCAR LIBRO"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="BTNBUSCARLECTOR" Margin="42,564,1037,60" Click="BTNBUSCARLECTOR_Click" FontSize="20">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/SOLICITANTES.png" Width="30" Height="30" Margin="0,0,5,0"/>
+                <TextBlock FontSize="12" Width="140" Height="34" TextAlignment="Center"><Run Text="BUSCAR "/><LineBreak/><Run Text="LECTOR"/></TextBlock>
+            </StackPanel>
+        </Button>
+        <Button x:Name="BTNDEVOLUCION" Margin="985,46,101,586" Click="BTNDEVOLUCION_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/CONFIRMAR.png" Width="30" Height="30" Margin="0,0,5,0"/>
+                <TextBlock Text="DEVOLUCION"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="BTNCANCELAR" Margin="57,46,1052,586" Click="BTNCANCELAR_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/ELIMINAR.png" Width="30" Height="30" Margin="0,0,5,0"/>
+                <TextBlock Text="CANCELAR"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="BTNBUSCARPRESTAMO" Margin="501,564,588,63" Click="BTNBUSCARPRESTAMO_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/BUSCAR.png" Width="30" Height="30" Margin="0,0,5,0"/>
+                <TextBlock Width="114" TextAlignment="Center" Height="42"><Run Language="es-es" Text="BUSCAR"/><LineBreak/><Run/><Run Text="PRESTAMO"/></TextBlock>
+            </StackPanel>
+        </Button>
+        <Label x:Name="LBL_PRESTAMOID" Content="" HorizontalAlignment="Left" Margin="278,151,0,0" VerticalAlignment="Top" FontSize="20" Width="69"/>
+        <Label Content="Préstamo a realizar:" HorizontalAlignment="Left" Margin="91,151,0,0" VerticalAlignment="Top" FontSize="20"/>
+
+        <Label Content="ID de solicitante:" HorizontalAlignment="Left" Margin="407,148,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox x:Name="TXT_IDSOLICITANTE" HorizontalAlignment="Left" Margin="569,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" FontSize="20" Text="Por elegir..." IsEnabled="False"/>
+        <Label Content="Solicitante a prestar:" HorizontalAlignment="Left" Margin="375,185,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox x:Name="TXT_NOMBRESOLICITANTE" HorizontalAlignment="Left" Margin="569,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="329" FontSize="20" IsEnabled="False"/>
+    </Grid>
+</Window>

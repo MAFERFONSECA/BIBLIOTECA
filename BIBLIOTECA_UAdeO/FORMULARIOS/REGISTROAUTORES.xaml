@@ -1,0 +1,60 @@
+﻿<Window x:Class="BIBLIOTECA_UAdeO.FORMULARIOS.REGISTROAUTORES"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BIBLIOTECA_UAdeO.FORMULARIOS"
+        mc:Ignorable="d"
+        Title="REGISTROAUTORES"  
+        Height="720"
+        Width="1280"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/FORMULARIOS/IMAGENES/BIBLIOTECARIO (2).png"/>
+        </Grid.Background>
+        <TextBox x:Name="TXT_ID_AUTOR" PreviewTextInput="TextBox_PreviewTextInput" HorizontalAlignment="Left" Margin="498,218,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="126" KeyDown="TXT_ID_AUTOR_KeyDown" FontSize="22"/>
+        <TextBox x:Name="TXT_NOMBRE_AUTOR" HorizontalAlignment="Left" Margin="498,263,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="393" MaxLength="40" FontSize="22" />
+        <Label x:Name="LBLREGISTROAUTOR" Content="REGISTRO DE AUTORES&#xD;&#xA;" HorizontalAlignment="Left" Margin="465,144,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" Height="60" Width="452" FontSize="36" RenderTransformOrigin="0.56,0.584"/>
+        <Label x:Name="NOMBREAUTOR" Content="Nombre:" HorizontalAlignment="Left" Margin="381,255,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" FontSize="22"/>
+        <Label x:Name="IDAUTOR" Content="ID:" HorizontalAlignment="Left" Margin="441,210,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" FontSize="22" RenderTransformOrigin="1.185,0.373"/>
+        <Label x:Name="APATERNOAUTOR" Content="Apellido Paterno:" HorizontalAlignment="Left" Margin="289,299,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" FontSize="22" Width="264"/>
+        <Label x:Name="AMATERNOAUTOR" Content="Apellido Materno:" HorizontalAlignment="Left" Margin="279,349,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" FontSize="22" Width="252" RenderTransformOrigin="0.676,0.546"/>
+        <TextBox x:Name="TXT_AMATERNO_AUTOR" HorizontalAlignment="Left" Margin="498,357,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="393" MaxLength="20" FontSize="22"/>
+        <TextBox x:Name="TXT_APATERNO_AUTOR" HorizontalAlignment="Left" Margin="498,307,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="393" MaxLength="20" FontSize="22"/>
+        <Button x:Name="BTN_GUARDAR_AUTOR" Margin="101,532,958,85" Click="BTN_GUARDAR_AUTOR_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/GUARDAR.png" Width="30" Height="30" Margin="0,0,5,0"/>
+                <TextBlock Text="GUARDAR"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="BTN_ELIMINAR_AUTOR" Margin="388,530,671,87" Click="BTN_ELIMINAR_AUTOR_Click" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/ELIMINAR.png" Width="30" Height="30" Margin="0,0,5,0"/>
+                <TextBlock Text="ELIMINAR"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="BTN_BUSCAR_AUTOR"  Margin="691,530,368,87" Click="BTNBUSCARAUTOR_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/BUSCAR.png" Width="30" Height="30" Margin="0,0,5,0"/>
+                <TextBlock Text="BUSCAR"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="BTNSALIR"  Margin="980,530,79,87" Click="BTNSALIR_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/SALIR.png" Width="30" Height="30" Margin="0,0,5,0"/>
+                <TextBlock Text="SALIR"/>
+            </StackPanel>
+        </Button>
+
+    </Grid>
+</Window>

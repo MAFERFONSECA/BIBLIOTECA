@@ -1,0 +1,47 @@
+﻿<Window x:Class="BIBLIOTECA_UAdeO.FORMULARIOS.LOGIN"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BIBLIOTECA_UAdeO.FORMULARIOS"
+        mc:Ignorable="d"
+        Title="LOGIN"
+        Height="720"
+        Width="1280"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/FORMULARIOS/IMAGENES/FONDOLOGIN (1).png"/>
+        </Grid.Background>
+        <Label x:Name="IDLOGIN" Content="ID:" HorizontalAlignment="Left" Margin="527,283,0,0" VerticalAlignment="Top" Width="54" FontWeight="Bold" FontStyle="Italic" FontSize="22" Foreground="White" FontFamily="Arial Black" RenderTransformOrigin="0.241,0.613"/>
+        <TextBox x:Name="TXTIDLOGIN" HorizontalAlignment="Left" Margin="581,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128" Height="33" RenderTransformOrigin="0.661,1.035" FontSize="20"/>
+        <TextBox x:Name="TXTCONTRASENALOGIN" HorizontalAlignment="Left" Margin="581,352,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" Height="33" FontSize="20"/>
+        <Label x:Name="CONTRASENALOGIN" Content="Contraseña:" HorizontalAlignment="Left" Margin="417,347,0,0" VerticalAlignment="Top" Width="159" FontWeight="Bold" FontStyle="Italic" FontSize="22" Foreground="White" FontFamily="Arial Black" RenderTransformOrigin="0.61,-0.499"/>
+        <Button x:Name="BTNENTRARLOGIN" Content="ENTRAR" HorizontalAlignment="Center" Margin="0,469,0,0" VerticalAlignment="Top" Height="52" Width="226" FontWeight="Bold" FontStyle="Italic" Background="White" Click="BTNENTRARLOGIN_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border x:Name="Border" CornerRadius="16" Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="Border" Property="Background" Value="#FFD3D3D3"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="BTNREGISTROASISTENCIA" Margin="1095,557,57,80" Click="BTNREGISTROASISTENCIA_Click" >
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/ASISTENCIA.png" Width="30" Height="30" Margin="0,0,5,0"/>
+                <TextBlock FontSize="9" TextAlignment="Center"><Run Text="REGISTRAR"/><LineBreak/><Run Text=" ASISTENCIA"/></TextBlock>
+            </StackPanel>
+        </Button>
+        <TextBlock Text="¿No eres administrador?" HorizontalAlignment="Left" Margin="1064,518,0,0" VerticalAlignment="Top" Height="39" Width="206" FontSize="16" Foreground="#FF0033FF" FontStyle="Italic" TextDecorations="Underline"/>
+
+    </Grid>
+</Window>

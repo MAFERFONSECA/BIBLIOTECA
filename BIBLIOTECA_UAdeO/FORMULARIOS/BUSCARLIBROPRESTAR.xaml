@@ -1,0 +1,48 @@
+﻿<Window x:Class="BIBLIOTECA_UAdeO.FORMULARIOS.BUSCARLIBROPRESTAR"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BIBLIOTECA_UAdeO.FORMULARIOS"
+        mc:Ignorable="d"
+        Title="Préstamos - Buscar Libro"         
+        Height="720"
+        Width="1280"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize">
+    <Grid x:Name="Grid" Loaded="Grid_Loaded">
+        <Grid.Background>
+            <ImageBrush x:Name="BIBLIOTECARIO_GRID" ImageSource="/FORMULARIOS/IMAGENES/BIBLIOTECARIO (2).png"/>
+        </Grid.Background>
+        <DataGrid x:Name="DTGRIDLIBROS" Margin="60,226,84,116" FontSize="16"/>
+        <Label x:Name="LBLBUSCARPOR" Content="Buscar por:" HorizontalAlignment="Left" Margin="36,154,0,0" VerticalAlignment="Top" FontSize="22" RenderTransformOrigin="-0.11,0.347"/>
+        <ComboBox x:Name="CBXBUSCARPOR" Margin="159,154,904,497" FontSize="18"/>
+        <TextBox x:Name="TXTBUSCAR" HorizontalAlignment="Left" Margin="499,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="394" Height="29" FontSize="22" TextChanged="TXTBUSCAR_TextChanged"/>
+        <Image x:Name="BUSCARICON" Margin="401,138,786,495" Source="IMAGENES/BUSCAR.png" Stretch="Fill" RenderTransformOrigin="0.48,0.284"/>
+        <Button x:Name="BTNSALIR" Margin="1033,604,30,25" Click="BTNSALIR_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/SALIR.png" Width="30" Height="30" Margin="0,0,5,0"/>
+                <TextBlock Text="SALIR"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="BTNACEPTAR" Margin="998,116,84,497" Click="BTNACEPTAR_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/GUARDAR.png" Width="30" Height="30" Margin="0,0,5,0"/>
+                <TextBlock Text="ACEPTAR"/>
+            </StackPanel>
+        </Button>
+        <Label x:Name="LBLCANTIDAD" Content="Cantidad:" HorizontalAlignment="Left" Margin="477,597,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <TextBox x:Name="TXTCANTIDADLIBROS" HorizontalAlignment="Left" Margin="579,604,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" Height="32" Text="0" IsReadOnly="True" TextAlignment="Center" FontSize="22" RenderTransformOrigin="0.478,-0.064"/>
+        <ScrollBar x:Name="SCRLLBARCANTIDAD" Orientation="Vertical" Width="22" Minimum="0" Maximum="20" SmallChange="1" LargeChange="10"
+ HorizontalAlignment="Left" Margin="636,600,0,0" VerticalAlignment="Top" Value="{Binding Text, ElementName=TXTCANTIDADLIBROS, Mode=TwoWay}" Height="32" RenderTransformOrigin="0.305,1.052">
+            <ScrollBar.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-179.984"/>
+                    <TranslateTransform X="7.804" Y="-30.911"/>
+                </TransformGroup>
+            </ScrollBar.RenderTransform>
+        </ScrollBar>
+    </Grid>
+</Window>

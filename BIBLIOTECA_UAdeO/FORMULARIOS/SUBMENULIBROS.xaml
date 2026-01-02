@@ -1,0 +1,55 @@
+﻿<Window x:Class="BIBLIOTECA_UAdeO.FORMULARIOS.SUBMENULIBROS"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BIBLIOTECA_UAdeO.FORMULARIOS"
+        mc:Ignorable="d"
+        Title="SUBMENULIBROS"       
+        Height="720"
+        Width="1280"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/FORMULARIOS/IMAGENES/BIBLIOTECARIO (2).png"/>
+        </Grid.Background>
+        <Button x:Name="BTN_RLIBROS" Margin="144,195,850,358" Click="BTNRLIBROS_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/libro.png" Width="85" Height="71"/>
+                <TextBlock Width="77" TextAlignment="Center"><Run/><LineBreak/><Run Text=" "/><Run Text=" "/><Run Text="REGISTRAR"/><LineBreak/><Run Text="   "/><Run Text="LIBRO"/><LineBreak/><Run/></TextBlock>
+            </StackPanel>
+        </Button>
+        <Button x:Name="BTN_RAUTORES" Margin="471,195,523,358" Click="BTNRAUTORES_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/RAUTORES.png" Width="85" Height="71"/>
+                <TextBlock Width="77" TextAlignment="Center"><Run/><LineBreak/><Run Text=" "/><Run Text=" "/><Run Text="REGISTRAR"/><LineBreak/><Run Text="  AUTOR"/></TextBlock>
+            </StackPanel>
+        </Button>
+        <Button x:Name="BTN_RGENEROS" Margin="801,195,193,358" Click="BTNRGENEROS_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/RGENERO.png" Width="85" Height="71"/>
+                <TextBlock Width="77" TextAlignment="Center"><Run/><LineBreak/><Run Text=" "/><Run Text=" "/><Run Text="REGISTRAR"/><LineBreak/><Run Text="   "/><Run Text="G"/><Run Language="es-mx" Text="É"/><Run Text="NERO"/></TextBlock>
+            </StackPanel>
+        </Button>
+        <Button x:Name="BTN_REDITORIAL" Margin="144,376,850,177" Click="BTNREDITORIAL_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/REDITORIAL.png" Width="85" Height="71"/>
+                <TextBlock Width="77" TextAlignment="Center"><Run/><LineBreak/><Run Text=" "/><Run Language="es-mx" Text=" "/><Run Text="REGISTRAR"/><LineBreak/><Run Text="   "/><Run Text="EDITORIAL"/></TextBlock>
+            </StackPanel>
+        </Button>
+        <Button x:Name="BTN_RSECCION" Margin="471,376,523,177" Click="BTNRSECCION_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/RSECCION.png" Width="85" Height="71"/>
+                <TextBlock Width="77"><Run/><LineBreak/><Run Text=" "/><Run Text=" "/><Run Text="REGISTRAR"/><LineBreak/><Run Text="   "/><Run Text="SECCI"/><Run Language="es-mx" Text="Ó"/><Run Text="N"/></TextBlock>
+            </StackPanel>
+        </Button>
+        <Button x:Name="BTN_REGRESAR" Margin="801,376,193,177" Click="BTNREGRESAR_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/REGRESAR.png" Width="85" Height="71"/>
+                <TextBlock Width="77"><Run/><LineBreak/><Run Text=" "/><Run Language="es-mx" Text=" "/><Run Text=""/><LineBreak/><Run Text="   "/><Run Text="REGRESAR"/></TextBlock>
+            </StackPanel>
+        </Button>
+
+    </Grid>
+</Window>

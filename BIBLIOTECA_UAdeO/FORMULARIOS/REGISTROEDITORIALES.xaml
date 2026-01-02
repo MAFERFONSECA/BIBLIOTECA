@@ -1,0 +1,48 @@
+﻿<Window x:Class="BIBLIOTECA_UAdeO.FORMULARIOS.REGISTROEDITORIALES"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BIBLIOTECA_UAdeO.FORMULARIOS"
+        mc:Ignorable="d"
+        Title="REGISTROEDITORIALES"  
+        Height="720"
+        Width="1280"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/FORMULARIOS/IMAGENES/BIBLIOTECARIO (2).png"/>
+        </Grid.Background>
+        <TextBox x:Name="TXT_ID_EDITORIAL" PreviewTextInput="TextBox_PreviewTextInput" HorizontalAlignment="Left" Margin="548,246,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="130" KeyDown="TXT_ID_EDITORIAL_KeyDown" FontSize="22" RenderTransformOrigin="2.557,1.825"/>
+        <TextBox x:Name="TXT_NOMBRE_EDITORIAL" HorizontalAlignment="Left" Margin="548,321,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="350" MaxLength="50" FontSize="22"/>
+        <Label x:Name="LBLREGISTROEDITORIAL" Content="REGISTRO DE EDITORIALES&#xD;&#xA;" HorizontalAlignment="Left" Margin="444,134,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" Height="64" Width="468" FontSize="36"/>
+        <Label x:Name="NOMBREEDITORIAL" Content="Editorial:" HorizontalAlignment="Left" Margin="419,313,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" FontSize="22"/>
+        <Label x:Name="IDEDITORIAL" Content="ID:" HorizontalAlignment="Left" Margin="484,238,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" FontSize="22" RenderTransformOrigin="1.499,0.352"/>
+        <Button x:Name="BTNGUARDAREDITORIAL" Margin="75,499,984,118" Click="BTNGUARDAREDITORIAL_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/GUARDAR.png" Width="30" Height="30" Margin="0,0,5,0"/>
+                <TextBlock Text="GUARDAR"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="BTNELIMINAREDITORIAL" Margin="373,499,686,118" Click="BTNELIMINAREDITORIAL_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/ELIMINAR.png" Width="30" Height="30" Margin="0,0,5,0"/>
+                <TextBlock Text="ELIMINAR"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="BTNBUSCAREDITORIAL" Margin="672,499,388,118" Click="BTNBUSCAREDITORIAL_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/BUSCAR.png" Width="30" Height="30" Margin="0,0,5,0"/>
+                <TextBlock Text="BUSCAR"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="BTNSALIR" Margin="985,499,74,118" Click="BTNSALIR_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/SALIR.png" Width="30" Height="30" Margin="0,0,5,0"/>
+                <TextBlock Text="SALIR"/>
+            </StackPanel>
+        </Button>
+
+    </Grid>
+</Window>

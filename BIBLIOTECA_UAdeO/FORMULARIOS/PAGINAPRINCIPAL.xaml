@@ -1,0 +1,59 @@
+﻿<Window x:Class="BIBLIOTECA_UAdeO.FORMULARIOS.PAGINAPRINCIPAL"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BIBLIOTECA_UAdeO.FORMULARIOS"
+        mc:Ignorable="d"
+        Title="PAGINAPRINCIPAL" 
+        Height="720"
+        Width="1280"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/FORMULARIOS/IMAGENES/BIBLIOTECARIO (2).png"/>
+        </Grid.Background>
+
+        <Button x:Name="BTNLIBROS" Margin="144,195,850,358" Click="BTNLIBROS_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="IMAGENES/LIBRO.png" Width="94" Height="71"/>
+                <TextBlock Width="71"><Run/><LineBreak/><Run/><LineBreak/><Run Text="   "/><Run Text="LIBROS"/><LineBreak/><Run/></TextBlock>
+            </StackPanel>
+        </Button>
+        <Button x:Name="BTNUSUARIOS" Margin="471,195,523,358" Click="BTNSOLICITANTES_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/SOLICITANTES.png" Width="67" Height="71"/>
+                <TextBlock Width="92"><Run/><LineBreak/><Run/><LineBreak/><Run Text="   "/><Run Text="USUARIOS"/><LineBreak/><Run/></TextBlock>
+            </StackPanel>
+        </Button>
+        <Button x:Name="BTNPRESTAMOS" Margin="801,195,193,358" Click="BTNPRESTAMOS_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/PRESTAMOS.png" Width="74" Height="71"/>
+                <TextBlock Width="103"><Run/><LineBreak/><Run/><LineBreak/><Run Text="   "/><Run Text="PR"/><Run Language="es-mx" Text="ÉS"/><Run Text="TAMOS"/><LineBreak/><Run/></TextBlock>
+            </StackPanel>
+        </Button>
+        <Button x:Name="BTNINFORMES" Margin="144,376,850,177" Click="BTNINFORMES_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/INFORMES.png" Width="87" Height="71"/>
+                <TextBlock Width="91"><Run/><LineBreak/><Run/><LineBreak/><Run Text=" INFORMES"/></TextBlock>
+            </StackPanel>
+        </Button>
+        <Button x:Name="BTNLISTADEASISTENCIA" Margin="471,376,523,177" Click="BTNLISTADEASISTENCIA_Click">
+            <StackPanel Orientation="Horizontal" Height="83" Width="154">
+                <Image Source="/FORMULARIOS/IMAGENES/ASISTENCIA.png" Width="65" Height="71"/>
+                <TextBlock Width="110" TextAlignment="Center" Height="93"><Run/><LineBreak/><Run/><LineBreak/><Run Text="  "/><Run Language="es-es" Text="LISTA "/><Run Text="D"/><Run Text="E "/><LineBreak/><Run/><Run Text="ASISTENCIA"/></TextBlock>
+            </StackPanel>
+        </Button>
+        <Button x:Name="BTNCERRARSESION" Margin="801,376,193,177" Click="BTNCERRARSESION_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/SALIR.png" Width="79" Height="71"/>
+                <TextBlock Width="110"><Run/><LineBreak/><Run/><LineBreak/><Run Text="CERRAR SESIÓN"/></TextBlock>
+            </StackPanel>
+        </Button>
+
+
+
+    </Grid>
+</Window>
+

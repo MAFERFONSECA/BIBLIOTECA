@@ -1,0 +1,48 @@
+﻿<Window x:Class="BIBLIOTECA_UAdeO.FORMULARIOS.TIPOUSUARIO"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BIBLIOTECA_UAdeO.FORMULARIOS"
+        mc:Ignorable="d"
+        Title="TIPOUSUARIO" 
+        Height="720"
+        Width="1280"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/FORMULARIOS/IMAGENES/BIBLIOTECARIO (2).png"/>
+        </Grid.Background>
+        <TextBox x:Name="TXTIDTIPOUSUARIO" PreviewTextInput="TextBox_PreviewTextInput" HorizontalAlignment="Left" Margin="546,251,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="119" KeyDown="TXTIDTIPOUSUARIO_KeyDown" FontSize="22"/>
+        <TextBox x:Name="TXTTIPOUSUARIO" HorizontalAlignment="Left" Margin="546,321,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="341" MaxLength="20" FontSize="22" RenderTransformOrigin="0.439,3.338"/>
+        <Label x:Name="LBLTIPOUSUARIO" Content="Tipo de Usuarios" HorizontalAlignment="Left" Margin="501,139,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" Height="88" Width="386" FontSize="36"/>
+        <Label x:Name="TIPOUSUARIO1" Content="Tipo de Usuario:" HorizontalAlignment="Left" Margin="351,313,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" FontSize="22" RenderTransformOrigin="0.501,0.908"/>
+        <Label x:Name="IDTUSUARIO" Content="ID:" HorizontalAlignment="Left" Margin="490,243,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" FontSize="22"/>
+        <Button x:Name="BTNGUARDARTIPOUSUARIO" Margin="75,499,984,118" Click="BTNGUARDARTIPOUSUARIO_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/GUARDAR.png" Width="30" Height="30" Margin="0,0,5,0"/>
+                <TextBlock Text="GUARDAR"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="BTNELIMINARTIPOUSUARIO" Margin="379,499,680,118" Click="BTNELIMINARTIPOUSUARIO_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/ELIMINAR.png" Width="30" Height="30" Margin="0,0,5,0"/>
+                <TextBlock Text="ELIMINAR"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="BTNBUSCARTIPOUSUARIO" Margin="694,499,365,118" Click="BTNBUSCARTIPOUSUARIO_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/BUSCAR.png" Width="30" Height="30" Margin="0,0,5,0"/>
+                <TextBlock Text="BUSCAR"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="BTNSALIR" Margin="994,499,65,118" Click="BTNSALIR_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/FORMULARIOS/IMAGENES/SALIR.png" Width="30" Height="30" Margin="0,0,5,0"/>
+                <TextBlock Text="SALIR"/>
+            </StackPanel>
+        </Button>
+
+    </Grid>
+</Window>
